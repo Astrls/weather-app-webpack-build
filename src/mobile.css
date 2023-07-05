@@ -1,0 +1,42 @@
+@media (width <= 450px) {
+    .settings{
+        align-self: flex-end;
+        margin: 1rem;
+        font-size: 1rem;
+      }
+    h1{
+        margin: 3rem 0;
+        font-size: 2rem;
+        font-weight: 100;
+      }
+      header{
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+      }
+      .search-wrapper input{
+        min-width: 100px;
+        margin-right: 3rem;
+      }
+      .wrapper{
+        gap:1rem;
+        padding: 0.5rem;
+        max-height: 55vh;
+      }
+      .weather-card{
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .time{
+        font-size: 1.5rem;
+      }
+
+      .forecast{
+        gap:0;
+        font-size:1rem;
+        font-family: Helvetica;
+        padding-right: 10px;
+      }
+      .temp{
+        font-size: 2rem;
+      }
+}
