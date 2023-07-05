@@ -229,8 +229,8 @@ button:hover {
   padding: 1rem;
   background-color: var(--accent);
   border-radius: 45px;
-  min-width: 50vw;
-  max-height: 60vh;
+  min-width: 40vw;
+  max-height: 40vh;
   overflow: scroll;
 }
 

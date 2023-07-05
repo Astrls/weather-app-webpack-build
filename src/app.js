@@ -9,10 +9,8 @@ import './img-component.js';
 let userApiKey = "";
 const submitButton = document.getElementById("submit");
 const cityChoice = document.getElementById("city-choice");
-const newDiv = document.createElement("div");
 const forecastWrapper = document.querySelector(".forecast-wrapper");
 const todayWrapper = document.querySelector(".today-wrapper");
-const weatherButtonsWrapper = document.querySelector(".days-button-wrapper");
 
 const hideArrow = () => {
   if (!document.getElementById("api-arrow").classList.contains("hidden")) {
@@ -115,7 +113,7 @@ const getWeather = (apiLat, apiLon) => {
 };
 
 //Event Listener on button click to pass the city to the getCity function
-const clickToPassCity = submitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", () => {
   let inputCity = document.getElementById("city-choice").value;
   forecastWrapper.classList.remove("hidden");
   todayWrapper.classList.remove("hidden")
@@ -124,7 +122,7 @@ const clickToPassCity = submitButton.addEventListener("click", () => {
 });
 
 //Event Listener on "enter" key press to pass the city to the getCity function
-const enterToPassCity = document.addEventListener("keyup", (e) => {
+document.addEventListener("keyup", (e) => {
   if (e.code == "Enter") {
     let inputCity = document.getElementById("city-choice").value;
     forecastWrapper.classList.remove("hidden");
